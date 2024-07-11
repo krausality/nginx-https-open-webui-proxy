@@ -70,6 +70,8 @@ services:
       - "443:443"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    restart: always  # This is the equivalent of --restart always
+
 ```
 
 4. Build the container:
